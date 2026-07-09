@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuni Sartono - Premium Property Advisor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        wood: { 950: '#2b160a', 800: '#4a3728' },
+                        gold: { 500: '#d4af37' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#fcfaf7] text-slate-800 antialiased min-h-screen flex flex-col pb-24">
+
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-wood-950 to-wood-800 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                </div>
+                <div>
+                    <span class="font-black text-lg tracking-tight text-wood-950 block leading-none">YUNI SARTONO</span>
+                    <span class="text-[10px] text-wood-800 font-bold tracking-widest uppercase block mt-1">Property Advisor</span>
+                </div>
+            </div>
+            <a href="https://instagram.com/lippoland.inhouse" target="_blank" class="p-2 text-slate-600 hover:text-pink-600 transition-colors">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153.555.555.9.11 1.153 1.772.248.636.415 1.363.465 2.428.05 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.217 1.79-.465 2.428-.254.66-.598 1.216-1.153 1.772-.555.555-1.11.9-1.772 1.153-.636.248-1.363.415-2.428.465-1.066.05-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.217-2.428-.465-.66-.254-1.216-.598-1.772-1.153-.555-.555-.9-1.11-1.153-1.772-.248-.636-.415-1.363-.465-2.428-.05-1.066-.06-1.405-.06-4.122 0-2.717.01-3.056.06-4.122.05-1.065.217-1.79.465-2.428.254-.66.598-1.216 1.153-1.772.555-.555 1.11-.9 1.772-1.153.636-.248 1.363-.415 2.428-.465 1.066-.05 1.405-.06 4.122-.06zm0 2.16c-2.65 0-2.966.01-4.01.058-.975.045-1.503.206-1.855.342-.467.18-.8.397-1.15.748-.351.351-.568.683-.748 1.15-.137.352-.298.88-.342 1.855-.047 1.044-.058 1.36-.058 4.01 0 2.65.01 2.966.058 4.01.045.975.206 1.503.342 1.855.18.467.397.8.748 1.15.351.351.683.568 1.15.748.352.137.88.298 1.855.342 1.044.047 1.36.058 4.01.058 2.65 0 2.966-.01 4.01-.058.975-.045 1.503-.206 1.855-.342.467-.18.8-.397 1.15-.748.351-.351.568-.683.748-1.15.137-.352.298-.88.342-1.855.047-1.044.058-1.36.058-4.01 0-2.65-.01-2.966-.058-4.01-.045-.975-.206-1.503-.342-1.855-.18-.467-.397-.8-1.15-.748-.352-.137-.88-.298-1.855-.342-1.044-.047-1.36-.058-4.01-.058zM12 7.038a4.962 4.962 0 1 1 0 9.924 4.962 4.962 0 0 1 0-9.924zm0 2.16a2.802 2.802 0 1 0 0 5.604 2.802 2.802 0 0 0 0-5.604zm6.068-4.704a1.16 1.16 0 1 1 0 2.32 1.16 1.16 0 0 1 0-2.32z"/></svg>
+            </a>
+        </div>
+    </nav>
+
+    <header class="bg-[#fcfaf7] pt-12 pb-6 px-4 text-center">
+        <div class="w-24 h-24 mx-auto rounded-full overflow-hidden mb-6 border-4 border-white shadow-xl">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&h=400" alt="Yuni" class="w-full h-full object-cover">
+        </div>
+        <h1 class="text-2xl font-black text-wood-950">Yuni Sartono</h1>
+        <p class="text-wood-800 text-sm font-medium mt-1">Property Advisor</p>
+        <button class="mt-4 bg-wood-950 text-gold-500 px-8 py-2 rounded-full text-xs font-bold shadow-lg hover:bg-wood-800 transition">Unit Park Serpong</button>
+        <div class="max-w-xs mx-auto mt-6">
+            <input type="text" id="search-input" placeholder="Cari unit..." class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-gold-500 focus:outline-none shadow-sm">
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 py-6">
+        <div id="phase-container" class="flex gap-3 overflow-x-auto no-scrollbar pb-2">
+            <button onclick="setPhase('7')" class="phase-btn px-6 py-2 rounded-full font-bold text-xs bg-wood-950 text-gold-500 whitespace-nowrap shadow-sm">Fase 7</button>
+            <button onclick="setPhase('8')" class="phase-btn px-6 py-2 rounded-full font-bold text-xs bg-white text-wood-950 border border-slate-200 whitespace-nowrap shadow-sm">Fase 8</button>
+            <button onclick="setPhase('BlackStar')" class="phase-btn px-6 py-2 rounded-full font-bold text-xs bg-white text-wood-950 border border-slate-200 whitespace-nowrap shadow-sm">BlackStar</button>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 pb-12">
+        <div id="catalog-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </main>
+
+    <section id="kpr-section" class="max-w-xl mx-auto px-4 py-12">
+        <div class="bg-[#f4ede2] p-8 rounded-3xl border border-slate-200 shadow-inner">
+            <h2 class="text-center text-sm font-bold text-wood-950 mb-8 uppercase tracking-widest">Simulasi Angsuran KPR</h2>
+            <div class="space-y-4">
+                <input type="number" id="kpr-harga" placeholder="Harga Properti (Rp)" class="w-full p-4 rounded-xl border border-slate-200 bg-white text-sm focus:ring-2 focus:ring-gold-500 shadow-sm">
+                <div class="grid grid-cols-2 gap-4">
+                    <input type="number" id="kpr-dp" placeholder="DP (%)" class="p-4 rounded-xl border border-slate-200 bg-white text-sm shadow-sm">
+                    <input type="number" id="kpr-tenor" placeholder="Tenor (Thn)" class="p-4 rounded-xl border border-slate-200 bg-white text-sm shadow-sm">
+                </div>
+                <div id="kpr-result-box" class="bg-wood-950 p-6 rounded-2xl text-center mt-6 hidden">
+                    <p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Estimasi Angsuran / Bulan</p>
+                    <h3 id="kpr-result" class="text-2xl font-black text-gold-500 mb-6"></h3>
+                    <button onclick="contactWhatsAppDirect()" class="w-full bg-[#a88a64] text-white py-3 rounded-xl font-bold text-sm hover:bg-[#8a7252] transition">Konsultasi dengan Yuni Sartono</button>
+                </div>
+                <button onclick="hitungKPR()" class="w-full bg-wood-950 text-white py-4 rounded-xl font-bold hover:bg-wood-800 transition shadow-lg">Hitung Sekarang</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-xs text-wood-800 border-t border-slate-100 bg-white">
+        <p>&copy; 2026 Yuni Sartono. All rights reserved.</p>
+    </footer>
+
+    <div id="detail-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-wood-950/80 backdrop-blur-sm">
+        <div class="bg-white rounded-3xl max-w-sm w-full p-6 space-y-4 max-h-[90vh] overflow-y-auto shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-wood-800 font-black">✕</button>
+            <div id="modal-slider" class="relative group overflow-hidden rounded-2xl">
+                <img id="modal-image" class="w-full h-56 object-cover">
+                <button onclick="prevImage()" class="absolute left-2 top-1/2 bg-black/50 text-white p-2 rounded-full">‹</button>
+                <button onclick="nextImage()" class="absolute right-2 top-1/2 bg-black/50 text-white p-2 rounded-full">›</button>
+            </div>
+            <h3 id="modal-title" class="text-xl font-black text-wood-950"></h3>
+            <p id="modal-desc" class="text-wood-800 text-sm leading-relaxed"></p>
+            <div id="modal-specs" class="grid grid-cols-3 gap-2 py-4 border-t border-b border-slate-100"></div>
+            <button onclick="goToKPR()" class="w-full bg-gold-500 text-wood-950 py-3 rounded-xl font-bold text-sm hover:bg-gold-600 transition">Simulasi KPR Unit Ini</button>
+        </div>
+    </div>
+
+    <a href="https://wa.me/6281386989553" target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-xl hover:scale-105 transition-transform animate-bounce">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+    </a>
+
+    <script>
+        const ALL_UNITS = {
+            7: [
+                { id: "bronze-beverly-livin", name: "Bronze Beverly Livin", tag: "305 Jt", val: 305000000, desc: "Hunian bergaya Beverly Hills yang ikonik dengan harga kompetitif Di Park Serpong.", bed: 1, bath: 2, floor: 2, photos: ["fase-7/unit-1.jpg", "fase-7/unit-1.1.jpg", "fase-7/unit-1.2.jpg", "fase-7/unit-1.3.jpg"] },
+                { id: "silver-beverly-livin", name: "Silver Beverly Livin", tag: "423 Jt", val: 423000000, desc: "Kenyamanan ekstra dengan desain interior yang memaksimalkan ruang Di Kawasan Park Serpong.", bed: 2, bath: 2, floor: 2, photos: ["fase-7/unit-2.jpg", "fase-7/unit-2.1.jpg", "fase-7/unit-2.2.jpg", "fase-7/unit-2.3.jpg"] },
+                { id: "urban-beverly-livin", name: "Urban Beverly Livin", tag: "569 Jt", val: 569000000, desc: "Gaya urban yang dinamis di pusat perkembangan kawasan Park Serpong.", bed: 3, bath: 3, floor: 2, photos: ["fase-7/unit-3.jpg", "fase-7/unit-3.1.jpg", "fase-7/unit-3.2.jpg", "fase-7/unit-3.3.jpg"] },
+                { id: "treetops-beverly-livin", name: "TreeTops Beverly Livin", tag: "568 Jt", val: 568000000, desc: "Nikmati ketenangan hidup dengan desain rumah Di Park Serpong yang menyatu dengan alam.", bed: 4, bath: 4, floor: 3, photos: ["fase-7/unit-4.jpg", "fase-7/unit-4.1.jpg", "fase-7/unit-4.2.jpg", "fase-7/unit-4.3.jpg"] },
+                { id: "gold-beverly-livin", name: "Gold Beverly Livin", tag: "747 Jt", val: 747000000, desc: "Simbol kemewahan Di Park Serpong bagi Anda yang mengutamakan kualitas hidup.", bed: 3, bath: 3, floor: 2, photos: ["fase-7/unit-5.jpg", "fase-7/unit-5.1.jpg", "fase-7/unit-5.2.jpg", "fase-7/unit-5.3.jpg"] },
+                { id: "goldtops-beverly-livin", name: "GoldTops Beverly Livin", tag: "901 Jt", val: 901000000, desc: "Masterpiece di Fase 7 Di Park Serpong dengan luas bangunan paling maksimal.", bed: 4, bath: 4, floor: 3, photos: ["fase-7/unit-6.jpg", "fase-7/unit-6.1.jpg", "fase-7/unit-6.2.jpg", "fase-7/unit-6.3.jpg"] }
+            ],
+            8: [
+                { id: "bronze-beverly-livin-8", name: "Bronze Beverly Livin", tag: "305 Jt", val: 305000000, desc: "Hunian bergaya Beverly Hills yang ikonik dengan harga kompetitif Di Park Serpong.", bed: 1, bath: 2, floor: 2, photos: ["fase-8/unit-1.jpg", "fase-8/unit-1.1.jpg", "fase-8/unit-1.2.jpg", "fase-8/unit-1.3.jpg"] },
+                { id: "silver-beverly-livin-8", name: "Silver Beverly Livin", tag: "423 Jt", val: 423000000, desc: "Kenyamanan ekstra dengan desain interior yang memaksimalkan ruang Di Kawasan Park Serpong.", bed: 2, bath: 2, floor: 2, photos: ["fase-8/unit-2.jpg", "fase-8/unit-2.1.jpg", "fase-8/unit-2.2.jpg", "fase-8/unit-2.3.jpg"] },
+                { id: "urban-beverly-livin-8", name: "Urban Beverly Livin", tag: "569 Jt", val: 569000000, desc: "Gaya urban yang dinamis di pusat perkembangan kawasan Park Serpong.", bed: 3, bath: 3, floor: 2, photos: ["fase-8/unit-3.jpg", "fase-8/unit-3.1.jpg", "fase-8/unit-3.2.jpg", "fase-8/unit-3.3.jpg"] },
+                { id: "treetops-beverly-livin-8", name: "TreeTops Beverly Livin", tag: "568 Jt", val: 568000000, desc: "Nikmati ketenangan hidup dengan desain rumah Di Park Serpong yang menyatu dengan alam.", bed: 4, bath: 4, floor: 3, photos: ["fase-8/unit-4.jpg", "fase-8/unit-4.1.jpg", "fase-8/unit-4.2.jpg", "fase-8/unit-4.3.jpg"] },
+                { id: "gold-beverly-livin-8", name: "Gold Beverly Livin", tag: "747 Jt", val: 747000000, desc: "Simbol kemewahan Di Park Serpong bagi Anda yang mengutamakan kualitas hidup.", bed: 3, bath: 3, floor: 2, photos: ["fase-8/unit-5.jpg", "fase-8/unit-5.1.jpg", "fase-8/unit-5.2.jpg", "fase-8/unit-5.3.jpg"] },
+                { id: "goldtops-beverly-livin-8", name: "GoldTops Beverly Livin", tag: "901 Jt", val: 901000000, desc: "Masterpiece di Fase 8 Di Park Serpong dengan luas bangunan paling maksimal.", bed: 4, bath: 4, floor: 3, photos: ["fase-8/unit-6.jpg", "fase-8/unit-6.1.jpg", "fase-8/unit-6.2.jpg", "fase-8/unit-6.3.jpg"] }
+            ],
+            BlackStar: [
+                { id: "bronze-beverly-livin-9", name: "Bronze Beverly Livin", tag: "305 Jt", val: 305000000, desc: "Hunian bergaya Beverly Hills yang ikonik dengan harga kompetitif Di Park Serpong.", bed: 1, bath: 2, floor: 2, photos: ["fase-9/unit-1.jpg", "fase-9/unit-1.1.jpg", "fase-9/unit-1.2.jpg", "fase-9/unit-1.3.jpg"] },
+                { id: "silver-beverly-livin-9", name: "Silver Beverly Livin", tag: "423 Jt", val: 423000000, desc: "Kenyamanan ekstra dengan desain interior yang memaksimalkan ruang Di Kawasan Park Serpong.", bed: 2, bath: 2, floor: 2, photos: ["fase-9/unit-2.jpg", "fase-9/unit-2.1.jpg", "fase-9/unit-2.2.jpg", "fase-9/unit-2.3.jpg"] },
+                { id: "urban-beverly-livin-9", name: "Urban Beverly Livin", tag: "569 Jt", val: 569000000, desc: "Gaya urban yang dinamis di pusat perkembangan kawasan Park Serpong.", bed: 3, bath: 3, floor: 2, photos: ["fase-9/unit-3.jpg", "fase-9/unit-3.1.jpg", "fase-9/unit-3.2.jpg", "fase-9/unit-3.3.jpg"] },
+                { id: "treetops-beverly-livin-9", name: "TreeTops Beverly Livin", tag: "568 Jt", val: 568000000, desc: "Nikmati ketenangan hidup dengan desain rumah Di Park Serpong yang menyatu dengan alam.", bed: 4, bath: 4, floor: 3, photos: ["fase-9/unit-4.jpg", "fase-9/unit-4.1.jpg", "fase-9/unit-4.2.jpg", "fase-9/unit-4.3.jpg"] },
+                { id: "gold-beverly-livin-9", name: "Gold Beverly Livin", tag: "747 Jt", val: 747000000, desc: "Simbol kemewahan Di Park Serpong bagi Anda yang mengutamakan kualitas hidup.", bed: 3, bath: 3, floor: 2, photos: ["fase-9/unit-5.jpg", "fase-9/unit-5.1.jpg", "fase-9/unit-5.2.jpg", "fase-9/unit-5.3.jpg"] },
+                { id: "goldtops-beverly-livin-9", name: "GoldTops Beverly Livin", tag: "901 Jt", val: 901000000, desc: "Masterpiece di BlackStar Di Park Serpong dengan luas bangunan paling maksimal.", bed: 4, bath: 4, floor: 3, photos: ["fase-9/unit-6.jpg", "fase-9/unit-6.1.jpg", "fase-9/unit-6.2.jpg", "fase-9/unit-6.3.jpg"] }
+            ]
+        };
+
+        let currentPhase = '7', currentUnit = null, imgIdx = 0;
+
+        function renderSpecs(specs, full = false) {
+            return `
+                <div class="text-center"><div class="font-bold text-gold-500 text-lg">🛏️</div><div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Kamar Tidur</div><div class="text-sm font-bold text-wood-950">${specs.bed}</div></div>
+                <div class="text-center"><div class="font-bold text-gold-500 text-lg">🛁</div><div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Kamar Mandi</div><div class="text-sm font-bold text-wood-950">${specs.bath}</div></div>
+                <div class="text-center"><div class="font-bold text-gold-500 text-lg">🏠</div><div class="text-[9px] text-slate-400 font-bold uppercase mt-1">Lantai</div><div class="text-sm font-bold text-wood-950">${specs.floor}</div></div>
+            `;
+        }
+
+        function renderCatalog(filter = "", phase = "7") {
+            const container = document.getElementById('catalog-container');
+            container.innerHTML = "";
+            const units = ALL_UNITS[phase] || [];
+            units.filter(u => u.name.toLowerCase().includes(filter.toLowerCase())).forEach(unit => {
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-3xl border border-slate-100 p-5 shadow-sm";
+                card.innerHTML = `
+                    <img src="${unit.photos[0]}" class="w-full h-40 object-cover rounded-2xl mb-4">
+                    <h3 class="font-black text-wood-950">${unit.name}</h3>
+                    <p class="text-wood-800 text-xs my-2">${unit.desc}</p>
+                    <div class="grid grid-cols-3 gap-2 py-3 border-t border-b border-slate-100">${renderSpecs({bed: unit.bed, bath: unit.bath, floor: unit.floor})}</div>
+                    <button onclick="openModal('${unit.id}', '${phase}')" class="w-full py-3 bg-wood-950 text-gold-500 rounded-xl text-sm font-bold mt-4">Lihat Detail</button>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function setPhase(p) {
+            currentPhase = p;
+            document.querySelectorAll('.phase-btn').forEach(b => b.className = `phase-btn px-6 py-2 rounded-full font-bold text-xs whitespace-nowrap shadow-sm ${b.innerText.replace('Fase ', '').replace('BlackStar', 'BlackStar') === p ? "bg-wood-950 text-gold-500" : "bg-white text-wood-950 border border-slate-200"}`);
+            renderCatalog(document.getElementById('search-input').value, p);
+        }
+
+        function openModal(id, phase) {
+            currentUnit = ALL_UNITS[phase].find(u => u.id === id);
+            imgIdx = 0;
+            document.getElementById('modal-title').innerText = currentUnit.name;
+            document.getElementById('modal-desc').innerText = currentUnit.desc;
+            document.getElementById('modal-image').src = currentUnit.photos[0];
+            document.getElementById('modal-specs').innerHTML = renderSpecs({bed: currentUnit.bed, bath: currentUnit.bath, floor: currentUnit.floor});
+            document.getElementById('detail-modal').classList.remove('hidden');
+        }
+
+        function nextImage() { imgIdx = (imgIdx + 1) % currentUnit.photos.length; document.getElementById('modal-image').src = currentUnit.photos[imgIdx]; }
+        function prevImage() { imgIdx = (imgIdx - 1 + currentUnit.photos.length) % currentUnit.photos.length; document.getElementById('modal-image').src = currentUnit.photos[imgIdx]; }
+        function goToKPR() { closeModal(); document.getElementById('kpr-harga').value = currentUnit.val; document.getElementById('kpr-section').scrollIntoView({ behavior: 'smooth' }); hitungKPR(); }
+        function hitungKPR() { 
+            const h = document.getElementById('kpr-harga').value, d = document.getElementById('kpr-dp').value, t = document.getElementById('kpr-tenor').value;
+            if(h && d && t) {
+                const cicilan = ((h * (1 - d/100)) / (t * 12)) * 1.05;
+                document.getElementById('kpr-result').innerText = `Rp ${Math.round(cicilan).toLocaleString('id-ID')}`;
+                document.getElementById('kpr-result-box').classList.remove('hidden');
+            }
+        }
+        function closeModal() { document.getElementById('detail-modal').classList.add('hidden'); }
+        function contactWhatsAppDirect() { window.open(`https://wa.me/6281386989553?text=Halo Yuni, saya tertarik konsultasi KPR properti.`); }
+        document.getElementById('search-input').addEventListener('input', (e) => renderCatalog(e.target.value, currentPhase));
+        window.onload = () => renderCatalog();
+    </script>
+</body>
+</html>
