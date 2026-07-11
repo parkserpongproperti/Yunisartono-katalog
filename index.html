@@ -23,17 +23,50 @@
         body { font-family: 'Inter', sans-serif; -webkit-tap-highlight-color: transparent; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        @keyframes textInOut {
+    0%, 100% {
+        opacity: 0;
+        transform: scaleX(0);
+        margin-right: -10px;
+    }
+    8%, 45% {
+        opacity: 1;
+        transform: scaleX(1);
+        margin-right: 8px;
+    }
+    55%, 92% {
+        opacity: 0;
+        transform: scaleX(0);
+        margin-right: -10px;
+    }
+}
     </style>
 </head>
 <body class="bg-[#fcfaf7] text-slate-800 antialiased min-h-screen flex flex-col pb-24">
 
-    <!-- Floating Global WhatsApp Button -->
-    <a href="https://wa.me/6281386989553?text=Halo%20Yuni,%20saya%20ingin%20bertanya%20tentang%20properti." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 active:scale-95 transition-transform duration-300">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zM12 2.162c-5.366 0-9.729 4.363-9.729 9.728 0 2.125.68 4.15 1.937 5.826l-1.272 4.654 4.773-1.252c1.614.88 3.426 1.346 5.291 1.347h.004c5.366 0 9.73-4.363 9.73-9.729 0-2.6-1.011-5.044-2.848-6.882-1.836-1.836-4.28-2.847-6.882-2.847zm4.729 13.084c-.26-.13-1.534-.757-1.771-.843-.238-.086-.412-.13-.585.13-.173.26-.671.843-.822 1.016-.151.173-.303.195-.563.065-.26-.13-1.097-.404-2.09-1.288-.772-.689-1.293-1.54-1.444-1.801-.151-.26-.016-.4.114-.529.117-.117.26-.303.39-.455.13-.151.173-.26.26-.433.086-.173.043-.325-.022-.455-.065-.13-.585-1.41-.801-1.928-.211-.51-.43-.43-.585-.438-.151-.008-.324-.008-.497-.008-.173 0-.455.065-.693.303-.238.238-.91.888-.91 2.162 0 1.274.927 2.503 1.057 2.676.13.173 1.825 2.786 4.421 3.904.618.266 1.101.424 1.478.544.621.197 1.185.169 1.631.103.497-.074 1.534-.627 1.751-1.233.217-.607.217-1.127.151-1.233-.065-.108-.238-.173-.497-.303z"/>
-        </svg>
-    </a>
-
+    <!-- Floating Global WhatsApp Button dengan Animasi Masuk-Keluar Teratur -->
+<a href="https://wa.me/6281386989553?text=Halo%20Yuni,%20saya%20ingin%20bertanya%20tentang%20properti." target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center justify-end">
+    
+    <!-- Balon Teks dengan Animasi Custom Kanan-Kiri Masuk-Keluar -->
+    <span class="bg-white text-slate-800 text-xs font-bold px-3 py-2 rounded-xl shadow-md border border-slate-100 mr-2 whitespace-nowrap origin-right"
+          style="animation: textInOut 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;">
+        Tanya Yuni Sartono Disini!
+    </span>
+    
+    <!-- Tombol Ikon WA dengan Efek Radar -->
+    <div class="relative shrink-0">
+        <!-- Efek gelombang radar di belakang tombol WA -->
+        <span class="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping"></span>
+        
+        <!-- Tombol Utama WA -->
+        <div class="relative bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 active:scale-95 transition-transform duration-300 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zM12 2.162c-5.366 0-9.729 4.363-9.729 9.728 0 2.125.68 4.15 1.937 5.826l-1.272 4.654 4.773-1.252c1.614.88 3.426 1.346 5.291 1.347h.004c5.366 0 9.73-4.363 9.73-9.729 0-2.6-1.011-5.044-2.848-6.882-1.836-1.836-4.28-2.847-6.882-2.847zm4.729 13.084c-.26-.13-1.534-.757-1.771-.843-.238-.086-.412-.13-.585.13-.173.26-.671.843-.822 1.016-.151.173-.303.195-.563.065-.26-.13-1.097-.404-2.09-1.288-.772-.689-1.293-1.54-1.444-1.801-.151-.26-.016-.4.114-.529.117-.117.26-.303.39-.455.13-.151.173-.26.26-.433.086-.173.043-.325-.022-.455-.065-.13-.585-1.41-.801-1.928-.211-.51-.43-.43-.585-.438-.151-.008-.324-.008-.497-.008-.173 0-.455.065-.693.303-.238.238-.91.888-.91 2.162 0 1.274.927 2.503 1.057 2.676.13.173 1.825 2.786 4.421 3.904.618.266 1.101.424 1.478.544.621.197 1.185.169 1.631.103.497-.074 1.534-.627 1.751-1.233.217-.607.217-1.127.151-1.233-.065-.108-.238-.173-.497-.303z"/>
+            </svg>
+        </div>
+    </div>
+</a>
+    
     <!-- Navigation Bar with Premium Instagram Username Badge -->
     <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
